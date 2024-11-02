@@ -1,0 +1,115 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #6b21a8, #ec4899, #dc2626); /* Purple to red gradient */
+    color: white;
+    padding: 10rem 0;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title-break {
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    .title-break {
+      display: inline-block;
+    }
+  }
+  
+  .hero-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-button {
+    padding: 0.5rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shop-now {
+    background-color: #f59e0b;
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  .shop-now:hover {
+    background-color: #d97706;
+  }
+  
+  .subscribe {
+    background-color: #4b5563;
+    color: white;
+  }
+  
+  .subscribe:hover {
+    background-color: #374151;
+  }
+  
+  .hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image {
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border: 4px solid #f59e0b;
+    filter: brightness(1.1) contrast(1.1) saturate(1.15);
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-image {
+      width: 300px;
+      height: 400px;
+    }
+  }
+  

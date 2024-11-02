@@ -1,0 +1,127 @@
+/* Navbar background and shadow */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #4f46e5, #8b5cf6, #ec4899);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Container styling */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Logo and Site Title */
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.site-title {
+  margin-left: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic; /* Makes text italic */
+}
+
+
+/* Hamburger Menu for Mobile */
+.hamburger-btn {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.hamburger-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: none;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e5e7eb; /* gray-200 */
+}
+
+/* Login Button */
+.login-btn {
+  display: none;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Mobile Dropdown Menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: linear-gradient(to right, #4f46e5, #8b5cf6, #ec4899);
+  padding: 1rem;
+  text-align: center;
+}
+
+.mobile-link {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.mobile-link:hover {
+  color: #e5e7eb;
+}
+
+.mobile-login-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.mobile-login-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .hamburger-btn {
+      display: none;
+  }
+
+  .nav-links {
+      display: flex;
+  }
+
+  .login-btn {
+      display: inline-flex;
+  }
+}

@@ -1,0 +1,134 @@
+/* Section styling */
+.contact-section {
+  color: #4B5563; /* text-gray-600 */
+  padding: 2rem 1rem;
+}
+
+/* Container styling */
+.contact-container {
+  padding: 4rem 1rem; /* Adjusted padding for responsiveness */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Title styling */
+.contact-title {
+  font-size: 2rem;
+  font-weight: 600; /* Increased font-weight for emphasis */
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  margin: 0 auto;
+  max-width: 80%; /* Adjusted to improve readability */
+  line-height: 1.7; /* Increased line-height for spacing */
+  font-size: 1rem;
+}
+
+/* Form styling */
+.form-wrapper {
+  max-width: 60%; /* Adjusted for desktop */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .form-wrapper {
+      max-width: 100%; /* Full-width on mobile */
+      padding: 0 1rem;
+  }
+}
+
+/* Input field styling */
+.input-field {
+  padding: 0.5rem;
+  flex: 1 1 48%; /* Adjusted for better flex behavior */
+  margin-bottom: 1rem;
+}
+
+.input-field label {
+  display: block;
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin-bottom: 0.25rem;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  background: rgba(229, 231, 235, 0.7);
+  border: 1px solid #D1D5DB;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  color: #374151;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: #6366F1;
+  background: white;
+  box-shadow: 0 0 0 0.15rem rgba(99, 102, 241, 0.3);
+}
+
+/* Button styling */
+.submit-button {
+  display: block;
+  margin: 2rem auto; /* Centered button */
+  background: #4F46E5;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #4338CA;
+}
+
+/* Contact info styling */
+.contact-info {
+  padding-top: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #E5E7EB;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: #4F46E5;
+}
+
+.contact-info p {
+  margin: 1.25rem 0;
+  line-height: 1.6;
+}
+
+/* Social icons */
+.social-icons {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .contact-title {
+      font-size: 1.5rem;
+  }
+
+  .contact-description {
+      max-width: 100%;
+      font-size: 0.9rem;
+  }
+
+  .input-field {
+      flex: 1 1 100%;
+  }
+}
